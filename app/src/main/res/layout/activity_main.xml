@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/bg_video_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/background_light"
+
+        >
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/floating_video_container"
+        android:layout_width="108dp"
+        android:layout_height="192dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/background_light"
+         />
+
+    <ImageView
+        android:id="@+id/joinBtn"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_weight="20"
+        android:layout_centerInParent="true"
+        android:foregroundGravity="center"
+        android:onClick="onjoinChannelClicked"
+        android:scaleType="centerInside"
+        android:src="@drawable/join_call" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/floating_video_container"
+        >
+
+        <ImageView
+            android:id="@+id/audioBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="20"
+            android:onClick="onAudioMuteClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/audio_toggle_btn" />
+
+        <ImageView
+            android:id="@+id/leaveBtn"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="20"
+            android:onClick="onLeaveChannelClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/end_call" />
+
+        <ImageView
+            android:id="@+id/videoBtn"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="20"
+            android:onClick="onVideoMuteClicked"
+            android:scaleType="centerInside"
+            android:src="@drawable/video_toggle_btn" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>
