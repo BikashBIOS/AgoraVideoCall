@@ -10,7 +10,7 @@
     <FrameLayout
         android:id="@+id/bg_video_container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="670dp"
         android:background="@android:color/background_light"
 
         >
@@ -43,7 +43,7 @@
         android:layout_height="65dp"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_below="@id/floating_video_container"
+        android:layout_below="@id/bg_video_container"
         >
 
         <ImageView
